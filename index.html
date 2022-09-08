@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+<title>Portfolio</title>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#nav">PORTFOLIO</a>
+  <a href="#kontakt">CONTACT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>//skripta za responsive navigaciju
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>//skripta za smooth scrolling
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<img src="images/background.jpg" alt="" style="width:100%"> 
+
+<div class="row">
+	<h1 id="nav">Welcome to my portfolio</h1><p class="paragraf">These are the applications and websites I developed on my own or within the ITAcademy</p><br>
+ 
+ <div class="column">
+    <img src="images/vesti.png" style="width:100%" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	<p class="paragraf">Vesti Platform - PHP developed. The administator is able to add customers with various privileges, news, and categories, to approve or remove comments. The customers registry is available along with the search button and number of views/comments. Data are stored in MySQL base.
+ </p>
+	<a href="https://github.com/IlicVladan/vesti" target="_blank">Click for the code</a>
+  </div>
+  
+<div class="column">
+    <img src="images/portfolio.jpg" style="width:100%" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	<p class="paragraf">This portfolio is developed in HTML and CSS, with the contact form in PHP, and gallery and responsive navigation in JavaScript. The background is created in Adobe Photoshop CC. </p>
+	<a href="https://github.com/IlicVladan/portfolio-en/tree/gh-pages" target="_blank">Click for the code</a>
+</div>
+
+<div class="column">
+    <img src="images/web_store.jpg" style="width:100%" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	<p class="paragraf">The Web Store is developed in PHP. Products can be added, questions answered, and comments approved. Customers added by the administrator are allowed to post ads while subscribers may comment on products and ask questions. There is a login and posting statistics. Data is stored in MySQL base. </p><br><br>
+</div>
+
+  <div class="column">
+    <img src="images/rad2.JPG" style="width:100%" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	<p class="paragraf">Greece Travel Agency website - developed in Adobe Dreamweaver CC with HTML and CSS code. Also responsible for the agency’s logo design.</p>
+	<a href="https://github.com/IlicVladan/Greece-travel-agency" target="_blank">Click for the code</a>
+  </div>
+  
+  <div class="column">
+    <img src="images/rad3.JPG" alt="" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+	<p class="paragraf">Real Estate Agency „Moje nekretnine“ - developed in WordPress</p>
+	<a href="https://github.com/IlicVladan/Moje-nekretnine/tree/gh-pages" target="_blank">Click for the code</a>
+  </div>
+ 
+<div class="column">
+    <img src="images/my_first_theme.jpg" style="width:100%" alt="" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+	<p class="paragraf">WordPress Theme - designed the option to add widgets and navigation</p>
+	<a href="https://github.com/IlicVladan/my_first_theme" target="_blank">Click for the code</a><br><br><br>
+</div>
+
+<div class="column">
+    <img src="images/bookstore.jpg" style="width:100%" alt="" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+	<p class="paragraf">Biblioteka Application - options for adding and deleting books are included, along with search buttons
+</p>
+	<a href="https://github.com/IlicVladan/bookstore" target="_blank">Click for the code</a>
+</div>
+
+  
+	</div>
+	
+	<div>
+		<p class="paragraf">These are the logos and home pages I developed at ITAcademy Design Studio and as a freelancer</p><br>
+  <div class="column">
+    <img src="images/logo.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt=""><p class="paragraf">The U.S. construction company V&H Construction logo"</p>
+  </div>
+	<div class="column">
+    <img src="images/logo2.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt=""><p class="paragraf">CityScout 360 logo</p>
+  </div><div class="column">
+    <img src="images/knjiga.jpg" style="width:100%; padding: 8px 12px;" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt=""><p class="paragraf">The book cover Drugo Carstvo</p>
+  </div><div class="column">
+    <img src="images/logo3.jpg" style="width:100%;  padding: 8px 12px" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt=""><p class="paragraf">Food and Wine restaurant’s logo</p>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+	
+
+
+<div id="myModal" class="modal">
+  
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+ 
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/vesti.png" alt="vhjvhvbj" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/portfolio.JPG" alt="" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/web_store.jpg" alt="" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/rad2.JPG" alt="" style="width:100% 
+  padding: 8px 12px;">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/rad3.JPG" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/my_first_theme.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/bookstore.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/rss-citac.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/logo.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/logo2.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/knjiga.jpg" alt="" style="width:100%">
+    </div><div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/logo3.jpg" alt="" style="width:100%">
+    </div>
+  </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    </div>
+
+<script>//skripta za galeriju slika
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+	
+
+	
+	
+<div>
+<h1 id="kontakt">CONTACT</h1>
+<p class="paragraf">Don’t hesitate to contact me regarding any questions you may have. I am looking forward to hearing from you.</p>
+<form id="frmContact" action="contact.php" method="post">
+    <div id="mail-status"></div>
+    <div class="contact-row column-right">
+        <label style="padding-top: 20px;">Name:</label> <span
+            id="userName-info" class="info"></span><br /> <input
+            type="text" name="userName" id="userName"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row column-right">
+        <label>E-majl:</label> <span id="userEmail-info" class="info"></span><br />
+        <input type="text" name="userEmail" id="userEmail"
+            class="demoInputBox">
+    </div>
+    <div class="contact-row">
+        <label>Phone No:</label> <span id="subject-info" class="info"></span><br />
+        <input type="text" name="subject" id="subject"
+            class="demoInputBox">
+    </div>
+    <div>
+        <label>Message:</label> <span id="content-info" class="info"></span><br />
+        <textarea name="content" id="content" class="demoInputBox"
+            rows="3"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Send" class="btnAction" />
+    </div>
+</form>
+	<div class="adresa">
+		<p><i class="fas fa-map-marker-alt"></i> Adress: Serbia: Belgrade</p>
+		<p><i class="fas fa-phone"></i> Phone No: +381 62 960 37 03</p>
+		<p><i class="far fa-envelope"></i> E-majl: vlado_ilic2008@yahoo.com</p>
+	</div>
+</div>	
+
+<footer>
+<p class="footer1">&copy; Vladan Ilić</p>
+<p class="footer2">Designed by Vladan Ilić</p>
+
+</footer>
+
+
+</body>
+</html>
